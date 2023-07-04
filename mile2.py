@@ -11,7 +11,10 @@ st.write('Welcome to my Sentiment Analysis app!')
 st.markdown("Sentiment Analysis App using 'streamlit' hosted on hugging spaces ")
 st.markdown("")
 
-user_input = st.text_area("Enter your text", value="")
+
+user_input = "I am happy to build a Sentiment Analysis App!"
+text_input = st.text_input("Enter Text", value=user_input)
+
 form = st.form(key='sentiment-form')
 submit = form.form_submit_button('Submit')
 
